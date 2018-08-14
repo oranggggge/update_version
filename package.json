@@ -1,0 +1,28 @@
+{
+  "name": "update_version",
+  "version": "1.0.0",
+  "description": "update server for new project",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "config": "^2.0.1",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oranggggge/update_version.git"
+  },
+  "author": "yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oranggggge/update_version/issues"
+  },
+  "homepage": "https://github.com/oranggggge/update_version#readme"
+}
