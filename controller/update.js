@@ -1,5 +1,5 @@
 const multer=require('koa-multer');
-const { uploadFile } = require('./util/upload');
+const { uploadFile } = require('./utils/uploadFile');
 
 //update controller
 module.exports = {
