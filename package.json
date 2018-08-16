@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bluebird": "^3.5.1",
+    "busboy": "^0.2.14",
     "config": "^2.0.1",
     "ejs": "^2.6.1",
     "koa": "^2.5.2",

@@ -1,4 +1,5 @@
-const multer=require('koa-multer')
+const multer=require('koa-multer');
+const { uploadFile } = require('./util/upload');
 
 //update controller
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
 		//ctx.body = `this is main page`
 	},
 	async upload (ctx) {
+		/*
 		var storage = multer.diskStorage({
 		  //文件保存路径
 		  destination: function (req, file, cb) {
@@ -22,7 +24,18 @@ module.exports = {
 		  }
 		})
 		var upload = multer({ storage: storage });
-	        
-	
+		*/
+		// 上传文件请求处理
+		let result = { success: false }
+		let serverFilePath = path.join( __dirname, 'public/uploads/' )
+
+		// 上传文件事件
+		result = await uploadFile( ctx, {
+		  fileType: 'file', // common or album
+		  path: serverFilePath
+		})
+
+		ctx.body = result
+
 	},
 }
