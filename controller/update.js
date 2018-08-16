@@ -28,7 +28,7 @@ module.exports = {
 		*/
 		// 上传文件请求处理
 		let result = { success: false }
-		let serverFilePath = path.join( __dirname, 'public/uploads/' )
+		let serverFilePath = path.join( __dirname, '../public/uploads/' )
 
 		// 上传文件事件
 		result = await uploadFile( ctx, {

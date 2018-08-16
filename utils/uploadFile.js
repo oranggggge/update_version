@@ -51,6 +51,7 @@ function uploadFile( ctx, options) {
     let result = {
       success: false,
       formData: {},
+      fileData: {},
     }
 
     // 解析请求文件事件
@@ -58,9 +59,9 @@ function uploadFile( ctx, options) {
       let fileName = Math.random().toString(16).substr(2) + '.' + getSuffixName(filename)
       let _uploadFilePath = path.join( filePath, fileName )
       let saveTo = path.join(_uploadFilePath)
-
       // 文件保存到制定路径
       file.pipe(fs.createWriteStream(saveTo))
+      result.fileData.fileSaveName = fileName;
 
       // 文件写入事件结束
       file.on('end', function() {
@@ -75,7 +76,9 @@ function uploadFile( ctx, options) {
     // 解析表单中其他字段信息
     busboy.on('field', function(fieldname, val, fieldnameTruncated, valTruncated, encoding, mimetype) {
       console.log('表单字段数据 [' + fieldname + ']: value: ' + inspect(val));
-      result.formData[fieldname] = inspect(val);
+      if(val){
+          result.formData[fieldname] = inspect(val);
+      }
     });
 
     // 解析结束事件
