@@ -2,6 +2,8 @@ const Koa = require('koa');
 const app = new Koa();
 const views = require('koa-views');
 const router = require('./router');
+const common = require('./controller/common');
+
 
 //tools
 const fs = require('fs');
@@ -19,6 +21,7 @@ app.use(views(path.join(__dirname,'./views'),{
 
 //路由加载比模板晚一些
 //routers
+router.get('/public',common.static);
 app.use(router.routes()).use(router.allowedMethods());
 app.on('error', (err, ctx) => {
     console.error('Server Error:', err);
