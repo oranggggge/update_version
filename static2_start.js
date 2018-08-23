@@ -1,10 +1,9 @@
-const staticUtil = require('../utils/static');
+const staticUtil = require('./utils/static');
 const path = require('path');
+const Koa = require('koa')
+const app = new Koa()
 
-const Router = require('koa-router');
-const router = new Router();
-
-router.get('/public', async (ctx) => {
+app.use( async ( ctx ) => {
   // 静态资源目录在本地的绝对路径
   let fullStaticPath = path.join(__dirname, './')
 
@@ -30,6 +29,7 @@ router.get('/public', async (ctx) => {
     ctx.body = _content
   }
 })
+
 
 app.listen(3080, () => {
   console.log('build success')
