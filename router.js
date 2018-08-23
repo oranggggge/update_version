@@ -10,7 +10,7 @@ router.get('/user/profile', user.profile);
 router.get('/update/index', update.index);
 router.get('/update/', update.index);
 router.post('/update/upload', update.upload);
-//router.get('/public', common.static);
+router.all('/public*', common.static);
 //router.get('/koa', common.koa_static);
 router.get('/', ctx=>{
 	ctx.body = `建设中`
