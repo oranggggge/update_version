@@ -21,7 +21,7 @@ app.use(views(path.join(__dirname,'./views'),{
 
 //路由加载比模板晚一些
 //routers
-router.get('/public',common.static);
+//router.get('/public',common.static);
 app.use(router.routes()).use(router.allowedMethods());
 app.on('error', (err, ctx) => {
     console.error('Server Error:', err);
