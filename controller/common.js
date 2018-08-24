@@ -35,5 +35,11 @@ module.exports = {
       ctx.body = _content
     }
   },
+  async index (ctx){
+    let title = 'main page';
+    await ctx.render('index', {
+        title
+    })
+  },
 
 }

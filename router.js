@@ -5,6 +5,9 @@ const update = require('./controller/update');
 const common = require('./controller/common');
 
 
+
+router.get('/', common.index);
+router.get('/index', common.index);
 router.post('/user/login', user.login);
 router.get('/user/profile', user.profile);
 router.get('/update/index', update.index);

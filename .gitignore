@@ -111,6 +111,10 @@ typings/
 !.vscode/extensions.json
 .history
 
+#node tools
+package-lock.json
+
+#project
 public/*
 # End of https://www.gitignore.io/api/node,linux,macos,visualstudiocode
 
