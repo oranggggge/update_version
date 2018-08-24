@@ -12,7 +12,7 @@ module.exports = {
     // 静态资源目录在本地的绝对路径
     let fullStaticPath = path.join(__dirname, '../')
 
-	console.log(fullStaticPath);
+    console.log(fullStaticPath);
     // 获取静态资源内容，有可能是文件内容，目录，或404
     let _content = await staticUtil.content(ctx, fullStaticPath)
 
@@ -35,12 +35,5 @@ module.exports = {
       ctx.body = _content
     }
   },
-	
-  async koa_static (ctx){
-    app.use(static(
-      path.join( __dirname,  staticPath)
-    ))
-  }
-
 
 }

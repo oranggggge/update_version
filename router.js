@@ -11,9 +11,12 @@ router.get('/update/index', update.index);
 router.get('/update/', update.index);
 router.post('/update/upload', update.upload);
 router.all('/public*', common.static);
-//router.get('/koa', common.koa_static);
-router.get('/', ctx=>{
-	ctx.body = `建设中`
+router.all('/*',async ctx=>{
+	//ctx.response.status = 404;
+	//ctx.response.body = '<h1>404 Not FOund</h1>';
+	await ctx.render('404', {
+	  //title
+	})
 });
 
 module.exports = router;

@@ -111,6 +111,7 @@ typings/
 !.vscode/extensions.json
 .history
 
+public/*
 # End of https://www.gitignore.io/api/node,linux,macos,visualstudiocode
 
 
