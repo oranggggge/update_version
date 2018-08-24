@@ -1,7 +1,6 @@
 const staticUtil = require('../utils/static');
 const path = require('path');
 const staticPath = '../public';
-const static = require('koa-static');
 const Koa = require('koa');
 const app = new Koa()
 

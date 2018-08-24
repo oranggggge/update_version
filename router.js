@@ -1,5 +1,15 @@
 const Router = require('koa-router');
 const router = new Router();
+const fs = require('fs');
+
+/*
+//自动载入 todo
+fs.readdirSync('./controller').forEach(function(filename) {
+    //if (filename.length > 13 && filename.substring(filename.length -13) == 'Controller.js') {
+    var filename.substring(0, filename.length - 3) = require('./controller/' + filename.substring(0, filename.length - 3));
+
+})
+*/
 const user = require('./controller/user');
 const update = require('./controller/update');
 const common = require('./controller/common');
