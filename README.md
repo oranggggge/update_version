@@ -15,3 +15,4 @@ ___
 * 暂时就这样吧
 > 每日一推绿油油
 > 0830 push
+> 0831 [Kubernetes核心](http://www.dockone.io/article/932)
