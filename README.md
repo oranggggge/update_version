@@ -14,7 +14,8 @@
 ___
 * 暂时就这样吧
 > 每日一推绿油油
-0830 push
-0831 [Kubernetes核心](http://www.dockone.io/article/932)
-0904 ![Kubernetes](http://dockone.io/uploads/article/20151230/d56441427680948fb56a00af57bda690.png)
+> 0830 push
+> 0831 [Kubernetes核心](http://www.dockone.io/article/932)
+> 0904 ![Kubernetes](http://dockone.io/uploads/article/20151230/d56441427680948fb56a00af57bda690.png)
+> 0905 for push
 
