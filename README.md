@@ -18,4 +18,5 @@ ___
 > 0831 [Kubernetes核心](http://www.dockone.io/article/932)
 > 0904 ![Kubernetes](http://dockone.io/uploads/article/20151230/d56441427680948fb56a00af57bda690.png)
 > 0905 for push
+* 0906 [简书](https://www.jianshu.com/)
 
